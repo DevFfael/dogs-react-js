@@ -10,7 +10,9 @@ const PhotoDelete = ({ id }) => {
     const confirm = window.confirm('Tem certeza que deseja deletar a foto?');
 
     if (confirm) {
-      const { url, options } = PHOTO_DELETE(id);
+      console.log('aqui');
+      const token = window.localStorage.getItem('token');
+      const { url, options } = PHOTO_DELETE(id, token);
       const response = await request(url, options);
       if (response.ok) window.location.reload();
     }
