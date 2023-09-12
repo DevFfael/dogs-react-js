@@ -74,12 +74,25 @@ export function PHOTOS_GET({ page, total, user }) {
 }
 
 export function PHOTO_GET({ id }) {
-  console.log(id);
   return {
     url: `${API_URL}/api/photo/${id}`,
     options: {
       method: 'GET',
       cache: 'no-store',
+    },
+  };
+}
+
+export function COMMENT_POST(id, body, token) {
+  return {
+    url: `${API_URL}/api/comment/${id}`,
+    options: {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        Authorization: 'Bearer' + token,
+      },
+      body: JSON.stringify(body),
     },
   };
 }
