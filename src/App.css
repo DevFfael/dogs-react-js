@@ -6,7 +6,7 @@
 
 body {
   margin: 0px;
-  padding-top: 6rem;
+  padding-top: 4rem;
   color: #333;
   --type-first: Helvetica, Arial, sans-serif;
   --type-second: 'Spectral', georgia;
@@ -50,6 +50,10 @@ a {
   max-width: 60rem;
   padding: 0 1rem;
   margin: 0 auto;
+}
+
+.mainContainer {
+  margin-top: 2rem;
 }
 
 .title {
