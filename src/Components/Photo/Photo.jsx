@@ -5,6 +5,7 @@ import Loading from '../Utils/Loading';
 import PhotoContent from './PhotoContent';
 import { useParams } from 'react-router-dom';
 import { PHOTO__GET } from '../../Routes/api';
+import Head from '../Utils/Head';
 
 const Photo = () => {
   const { id } = useParams();
@@ -20,6 +21,7 @@ const Photo = () => {
   if (data)
     return (
       <section className="container mainContainer">
+        <Head title={data.photo.title} />
         <PhotoContent single={true} data={data} />
       </section>
     );
