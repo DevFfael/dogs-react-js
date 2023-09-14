@@ -6,7 +6,7 @@
 
 body {
   margin: 0px;
-  padding-top: 6rem;
+  padding-top: 4rem;
   color: #333;
   --type-first: Helvetica, Arial, sans-serif;
   --type-second: 'Spectral', georgia;
@@ -52,6 +52,10 @@ a {
   margin: 0 auto;
 }
 
+.mainContainer {
+  margin-top: 2rem;
+}
+
 .title {
   font-family: var(--type-second);
   line-height: 1;
@@ -85,4 +89,18 @@ a {
     opacity: 1;
     transform: initial;
   }
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh + 10rem);
+}
+
+.AppBody {
+  flex: 1;
+}
+
+.VictoryContainer {
+  height: initial !important;
 }

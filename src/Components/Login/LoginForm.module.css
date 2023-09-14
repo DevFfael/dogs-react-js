@@ -1,4 +1,4 @@
-.form{
+.form {
   margin-bottom: 2rem;
 }
 
@@ -9,7 +9,7 @@
   line-height: 1;
 }
 
-.perdeu::after{
+.perdeu::after {
   content: '';
   height: 2px;
   width: 100%;
@@ -19,6 +19,7 @@
 
 .cadastro {
   margin-top: 4rem;
+  margin-bottom: 4rem;
 }
 
 .cadastro p {
@@ -40,4 +41,3 @@
   width: 3rem;
   border-radius: 0.2rem;
 }
-
